@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /resources/
+Disallow: /svg/
+Disallow: /administration/
+Disallow: /facebook-callback.php
+Disallow: /login_facebook.php
+Disallow: /logout.php
+Disallow: /google5d03db6c40c79fff.html
+
+Host: http://imenglish.com.ua
+Sitemap: http://imenglish.com.ua/sitemap.xml
