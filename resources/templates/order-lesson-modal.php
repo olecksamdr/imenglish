@@ -53,14 +53,6 @@
           <input type="text" data-toggle="tooltip" title="пример: 0506984388" class="form-control" id="phone" name="phone" placeholder="Телефон">
           </div>
 
-          <div class="form-group">
-          <label for="skype" class="sr-only">Skype</label>
-          <input type="text" class="form-control" id="skype" name="skype" placeholder="Skype">
-          </div>
-
-          <label for="message" class="sr-only">Сообщение</label>
-          <textarea class="form-control" id="message" name="message" rows="3" placeholder="Сообщение"></textarea>
-
           <button type="submit" class="btn btn-primary btn-block">Отправить</button>
          </fieldset>
       </form>

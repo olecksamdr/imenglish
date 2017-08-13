@@ -50,7 +50,7 @@
 
         <div class="advertising hidden-xs">
           <p>
-            зарегистрируйтесь <b>до 1 сентября</b> и получите <b>2 урока в подарок</b>
+            Зарегистрируйтесь <b>до 1 сентября</b> и получите <b>2 урока в подарок</b>
           </p>
         </div>  <!-- advertising -->
 
@@ -265,6 +265,9 @@
   <script src="js/vendor/jquery.waypoints.min.js"></script>
   <script src="js/vendor/bootstrap.min.js"></script>
   <script src="js/scripts.js"></script>
+  <script src="js/orderLessonValidation.js" type="text/javascript">
+
+  </script>
 
   <!-- flexbox for old browsers -->
   <script type="text/javascript" src="js/vendor/flexibility.js"></script>

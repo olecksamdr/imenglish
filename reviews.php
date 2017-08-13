@@ -173,6 +173,7 @@
   <script src="js/vendor/jquery.validate.min.js"></script>
   <script src="js/vendor/bootstrap.min.js"></script>
   <script src="js/reviews.js"></script>
+  <script src="js/orderLessonValidation.js" type="text/javascript">
 
   <?php
     // include google analytics script

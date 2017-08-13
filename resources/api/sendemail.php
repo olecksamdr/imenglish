@@ -7,8 +7,8 @@
   $from = transftom($_POST['email']);
   $name = transftom($_POST['name']);
   $phone = transftom($_POST['phone']);
-  $skype = transftom($_POST['skype']);
-  $message = transftom($_POST['message']);
+  // $skype = transftom($_POST['skype']);
+  // $message = transftom($_POST['message']);
 
   function transftom($data) {
     $data = trim($data);
@@ -105,9 +105,9 @@
 
 		$htmlMessage = "<h1> Заявка на урок від $name </h1>";
 		$htmlMessage .= "<h2> email: $from </h2>";
-		$htmlMessage .= "<h2> skype: $skype </h2>";
+		// $htmlMessage .= "<h2> skype: $skype </h2>";
 		$htmlMessage .= "<h2> моб.: $phone </h2>";
-		$htmlMessage .= "<p>{$message}</p>";
+		// $htmlMessage .= "<p>{$message}</p>";
 
 
 		//Read an HTML message body from an external file, convert referenced images to embedded,
@@ -117,9 +117,9 @@
 
 		$textMessage = "Заявка на урок від $name \n";
 		$textMessage .= "email: $from \n";
-		$textMessage .= "skype: $skype \n";
+		// $textMessage .= "skype: $skype \n";
 		$textMessage .= "моб.: $phone \n";
-		$textMessage .= $message;
+		// $textMessage .= $message;
 
 		//Replace the plain text body with one created manually
 		$mail->AltBody = $textMessage;
@@ -133,30 +133,5 @@
 		} else {
 			echo "ok";
 		}
-
-
-
-
-
-
-
-    //$headers = "From: " . $from . "\r\n";
-    //$headers .= "Reply-To: ". $from . "\r\n";
-    //$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
-
-    //$subject = "Заявка на урок від $name";
-
-    //$htmlMessage = "<h1> Заявка на урок від $name <h1>";
-    //$htmlMessage .= "<h2> email: $from <h2>";
-    //$htmlMessage .= "<h2> skype: $skype <h2>";
-    //$htmlMessage .= "<h2> моб.: $phone <h2>";
-    //$htmlMessage .= "<p>{$message}<p>";
-
-    //$isSend = mail($to, $subject, $htmlMessage, $headers);
-
-    //if ($isSend)
-	//  echo "ok";
-	//else
-	//  sendErrors(array('Не удалось отправить email'));
   }
 ?>

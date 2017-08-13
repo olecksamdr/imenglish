@@ -119,5 +119,6 @@
   <script src="../js/vendor/jquery.waypoints.min.js"></script>
   <script src="../js/vendor/bootstrap.min.js"></script>
   <script src="../js/manage-reviews.js"></script>
+  <script src="../js/orderLessonValidation.js" type="text/javascript">
 </body>
 </html>
