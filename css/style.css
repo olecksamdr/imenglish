@@ -1,3 +1,8 @@
+/*.bg-black-pattern {
+  padding: 40px;
+  background: url("https://www.toptal.com/designers/subtlepatterns/patterns/congruent_outline.png");
+}*/
+
 .wp1, .wp2 { visibility: hidden; }
 
 .bounceInLeft,
@@ -23,6 +28,10 @@ html, body {
   overflow: visible;
   background-color: #F2F2F2;;
   /*font-family: Arial, Helvetica, sans-serif;*/
+}
+
+.pos-relative {
+  position: relative;
 }
 
 .gradient-reef {
@@ -79,10 +88,9 @@ html, body {
   color: #fff;
 }
 
-header {
-  height: 100%;
-  min-height: 600px;
-  background: #eadc74;
+header.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 /*
@@ -207,32 +215,6 @@ header {
   #btn-logout.pull-right {
     float: none !important;
   }
-}
-
-
-#workspace {
-  margin: 0 auto;
-  position: relative;
-  max-width: 1600px;
-  width: 100%;
-  min-height: 600px;
-  max-height: 1000px;
-  height: 100%;
-
-  /* table */
-  border-bottom: 20px solid #6d482d;
-  /* box-shadow: 0 5px 2px rgba(0,0,0,.25);  */
-}
-
-#workspace .computer,
-#workspace .computer-glass,
-#workspace .skype-wrapper,
-#workspace .computer-text,
-#workspace .clock,
-#workspace .cup,
-#workspace .globe
- {
-  position: absolute;
 }
 
 /*
@@ -367,10 +349,48 @@ header {
 
 
 /** computer and its parts */
+#workspace {
+  margin: 0 auto;
+  position: relative;
+  max-width: 1600px;
+  min-width: 100%;
+  min-height: 750px;
+  height: 100%;
 
-#workspace .computer {
+  /* table */
+  border-bottom: 20px solid #6d482d;
+  background: #eadc74;
+}
+
+header .container {
+  position: relative;
+  min-height: 100%;
+}
+
+
+#workspace .computer,
+#workspace .computer-glass,
+#workspace .skype-wrapper,
+#workspace .computer-text,
+#workspace .clock,
+#workspace .cup,
+#workspace .globe,
+#workspace .advertising
+ {
+  position: absolute;
+}
+
+/*#workspace .comp-desc-wrapper {
+  position: absolute;
+  width: 711px;
+  height: 480px;
+  bottom: 0;
+}*/
+
+#workspace .computer{
   z-index: 3;
-  left: 55%;
+  margin: auto;
+  left: 50%;
   bottom: -10px;
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
@@ -479,55 +499,198 @@ header {
 /** clock */
 #workspace .clock {
   width: 240px;
-  top: 5%;
-  right: 5%;
+  top: -50px;
+  left: 40%;
+}
+
+#workspace .advertising {
+  display: block;
+  /*z-index: 9999;*/
+  top: 1%;
+  left: 10%;
+  width: 250px;
+  height: 200px;
+  background: #f7f7f7;
+  margin: 0 auto;
+  margin-top: 80px;
+
+  border-top: 40px solid #c15a3a;
+  box-shadow: 2px 2px 3px rgba(0,0,0,.1);
+  border-radius: 4px;
+  text-align: center;
+}
+
+#workspace .advertising p {
+  padding: 10px;
+  /*margin-top: px;*/
+  font-size: 23px;
+  color: #656464;
+  vertical-align: center;
+}
+
+#workspace .main-description {
+  position: absolute;
+  right: -150px;
+  top: 20px;
+  display: inline-block;
+  max-width: 400px;
+  z-index: 1;
+  margin-top: 50px;
+  font-size: 25px;
+  padding: 20px;
+  border-radius: 4px;
+  text-align: left;
+  color: #3F3F3F;
+  background-image: url(../img/paper.png);
+  border: 10px solid #3F3F3F;
+  box-shadow: 3px 3px 5px rgba(0,0,0,.2);
+}
+
+#workspace .main-description:before {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  top: -61px;
+  width: 80%;
+  margin-left: -25%;
+  height: 60px;
+  background-image: url("../img/lace.svg");
+  -webkit-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#workspace .main-description h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+  /*border-bottom: 1px solid #333;*/
+}
+
+#workspace .main-description ul {
+  padding-left: 20px
 }
 
 #workspace .cup {
   z-index: 4;
   width: 140px;
   bottom: 0;
-  right: 10%;
+  right: -110px;
 }
 
 #workspace .globe {
   z-index: 5;
   width: 258px;
   bottom: 0;
-  left: 5%;
+  left: -60px;
 }
 
+@media (max-width: 1430px) {
+  #workspace .globe {
+    display: none;
+  }
 
-@media (min-width: 768px) and (max-width: 992px) {
+  #workspace .computer {
+    transform: none;
+    -webkit-transform: none;
 
-	#workspace .computer-icon {
+    left: 25px;
+  }
+
+  #workspace .main-description {
+    right: 0;
+  }
+
+  #workspace .advertising {
+    top: -40px;
+  }
+}
+
+@media (max-width: 1200px) {
+  #workspace .main-description {
+    z-index: 1;
+    width: 350px;
+    right: -30px;
+  }
+}
+
+@media (max-width: 1060px) {
+  #workspace .main-description {
+    right: 10px;
+  }
+
+  #workspace .computer-icon {
 	  width: 640px; /* multiply by 0.9 */
 	}
 
-	#workspace .computer-glass {
-	  width: 494px;
-	}
+  #workspace .computer-glass {
+    width: 494px;
+  }
 
-	#workspace .skype-wrapper {
-	  width: 216px;
-	  height: 216px;
-	  top: 56px;
-	  left: 32px;
-	}
+  #workspace .skype-wrapper {
+    width: 216px;
+    height: 216px;
+    top: 56px;
+    left: 32px;
+  }
 
-	#workspace .skype-icon {
-	  width: 136px;
-	}
+  #workspace .skype-icon {
+    width: 136px;
+  }
 
-	#workspace .computer-text {
-	  top: 71px;
-	  left: 255px;
-	}
+  #workspace .computer-text {
+    top: 71px;
+    left: 255px;
+  }
 
-	#workspace .computer-text p {
-	  font-size: 35px;
-	}
+  #workspace .computer-text p {
+    font-size: 35px;
+  }
+}
 
+@media (max-width: 992px) {
+  #workspace .main-description {
+    z-index: 1;
+    width: 280px;
+    height: 75%;
+    overflow: auto;
+    right: 0px;
+  }
+  #workspace .advertising {
+    top: 10px;
+    left: 35px;
+  }
+  #workspace .computer-icon {
+    width: 518px;
+  }
+  #workspace .computer-glass {
+    width: 397px;
+    top: 16px;
+    left: 19px;
+  }
+  #workspace .skype-wrapper {
+    width: 172px;
+    height: 172px;
+    top: 56px;
+    left: 32px;
+  }
+  #workspace .skype-icon {
+    width: 108px;
+  }
+  #workspace .computer-text {
+    top: 59px;
+    left: 215px;
+  }
+  #workspace .computer-text h1 span {
+    font-size: 28px;
+    padding: 0 17px;
+    line-height: 45px;
+    margin: 2px 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
 	/** clock */
 	#workspace .clock {
 	  width: 216px;
@@ -563,8 +726,6 @@ header {
 
 @media (max-width: 767px) {
    /* navbar for extra small */
-
-
 	.navbar .navbar-nav>li>a {
 	  padding-top: 15px;
 	  padding-bottom: 15px;
@@ -579,34 +740,75 @@ header {
 	    font-size: 14px;
 	 }
 
-   /* workspace */
+  header .container {
+    -js-display: flex;
+    display: flex;
+    flex-direction: column;
+  }
 
-	#workspace .computer {
-	  width: 100%;
-	  overflow-x: hidden;
-	  overflow-y: visible;
-	  left: 0;
+   /* workspace */
+   #workspace {
+     height: auto;
+   }
+
+
+   #workspace .main-description {
+     position: relative;
+     width: 80%;
+     margin: 80px 0;
+     left: 50%;
+     transform: translateX(-50%);
+     -webkit-transform: translateX(-50%);
+   }
+
+
+	#workspace .computer{
+    bottom: 8px;
+    width: 80%;
+    position: relative;
+	  overflow: hidden;
+	  /*overflow-y: visible;*/
+    left: 50%;
+     margin-left: -35%;
 
 	  transform: none;
 	  -webkit-transform: none;
 	}
 
 	#workspace .computer-icon {
-	  position: relative;
+	  /*position: relative;*/
 	  width: 100%;
-	  left: 7%;
+
 	}
 
+  #workspace .computer .advertising {
+    position: absolute;
+    display: block;
+    /* z-index: 9999; */
+    top: 10%;
+    left: 50%;
+    width: 250px;
+    height: 175px;
+    background: #f7f7f7;
+    margin: 0 auto;
+    /* margin-top: 80px; */
+    border-top: 16px solid #c15a3a;
+    box-shadow: 2px 2px 3px rgba(0,0,0,.1);
+    border-radius: 4px;
+    text-align: center;
+    transform: translateX(-70%);
+  }
+
 	#workspace .computer-glass {
-	  width: 77%;
-	  top: 5%;
-      left: 10%;
+    width: 77%;
+    top: 4%;
+    left: 3%;
 	}
 
 	#workspace .skype-wrapper {
       width: 110px;
       height: 110px;
-      top: 35%;
+      top: 18%;
       left: 50%;
       transform: translateX(-50%) translateY(-50%);
       -webkit-transform: translateX(-50%) translateY(-50%);

@@ -1,6 +1,14 @@
 
 $(function() {
 
+  // on extra small devices change container display to flex
+  // for older browser support we use flexibility.js
+  if ($(window).width() <= 767) {
+    $('header .container').data('style', 'display: flex;');
+
+    flexibility(document.documentElement);
+  }
+
   /***************** logout ******************/
 
   $('#btn-logout').click(function() {

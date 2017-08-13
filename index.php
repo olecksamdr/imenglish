@@ -34,42 +34,68 @@
     require_once(TEMPLATES_PATH.'/order-lesson-modal.php');
    ?>
 
-  <header>
+  <header id="workspace">
 
   <!-- include navigation -->
   <?php
-    require_once(TEMPLATES_PATH.'/navigation.php');
-   ?>
+  require_once(TEMPLATES_PATH.'/navigation.php');
+  ?>
 
-	  <div id="workspace">
-		<div id="workspace-title" class="visible-xs">
-				<h1>уроки английского по скайпу</h1>
-			</div>
+  <div class="container" >
 
-		<div class="computer">
-		  <img src="img/computer.svg" alt="компьютер" class="computer-icon">
-		  <img src="img/computer-glass.svg" alt="блик компьютерного стекла" class="computer-glass">
 
-		  <div class="skype-wrapper">
-			<img src="img/skype.svg" alt="иконка скайп" class="skype-icon">
+        <!-- <div id="workspace-title" class="visible-xs">
+          <h1>уроки английского по скайпу</h1>
+        </div> -->
 
-			<div class="double-bounce1"></div>
-			<div class="double-bounce2"></div>
-		  </div>
+        <div class="advertising hidden-xs">
+          <p>
+            зарегистрируйтесь <b>до 1 сентября</b> и получите <b>2 урока в подарок</b>
+          </p>
+        </div>  <!-- advertising -->
 
-		  <div class="computer-text hidden-xs">
-			<h1>
-        <span>уроки</span><br>
-			  <span>английского</span><br>
-			  <span>по скайпу</span>
-      </h1>
-		  </div>
-		</div>
-		<img src="img/clock.svg" alt="часы" class="clock hidden-xs">
-		<img src="img/cup.svg" alt="кружка" class="cup hidden-xs">
-		<img src="img/globe.svg" alt="глобус" class="globe hidden-sm hidden-xs">
-	  </div>
-	</header>
+          <div class="main-description">
+            <h3>Почему мы?<br> Потому что у нас:</h3>
+            <ul>
+              <li>опытные преподаватели,</li>
+              <li>гибкая система скидок,</li>
+              <li>акцент на уроках на разговорной практике,</li>
+              <li>лучшая подготовка к IELTS, TOEFL, ЗНО,</li>
+              <li>бесплатные учебные материалы,</li>
+              <li>удобный график занятий,</li>
+              <li>и просто дружеская атмосфера на уроках</li>
+            </ul>
+          </div> <!-- /main-description -->
+
+          <div class="computer">
+            <img src="img/computer.svg" alt="компьютер" class="computer-icon">
+            <img src="img/computer-glass.svg" alt="блик компьютерного стекла" class="computer-glass">
+
+            <div class="advertising visible-xs">
+              <p>
+                зарегистрируйтесь <b>до 1 сентября</b> и получите <b>2 урока в подарок</b>
+              </p>
+            </div>  <!-- advertising -->
+
+            <div class="skype-wrapper hidden-xs">
+              <img src="img/skype.svg" alt="иконка скайп" class="skype-icon">
+
+              <div class="double-bounce1"></div>
+              <div class="double-bounce2"></div>
+            </div>
+
+            <div class="computer-text hidden-xs">
+              <h1>
+                <span>уроки</span><br>
+                <span>английского</span><br>
+                <span>по скайпу</span>
+              </h1>
+            </div>
+            <img src="img/cup.svg" alt="кружка" class="cup hidden-xs hidden-md">
+          </div> <!-- /computer -->
+        <img src="img/globe.svg" alt="глобус" class="globe hidden-sm hidden-xs">
+    </div> <!-- container -->
+  </header> <!-- /workspace -->
   <section id="courses">
 	  <div class="container">
 		 <div class="text-center">
@@ -239,6 +265,9 @@
   <script src="js/vendor/jquery.waypoints.min.js"></script>
   <script src="js/vendor/bootstrap.min.js"></script>
   <script src="js/scripts.js"></script>
+
+  <!-- flexbox for old browsers -->
+  <script type="text/javascript" src="js/vendor/flexibility.js"></script>
 
   <?php
     // include google analytics script
