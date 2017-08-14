@@ -754,26 +754,49 @@ header .container {
 
    #workspace .main-description {
      position: relative;
-     width: 80%;
+     width: 100%;
+     /*max-width: */
      margin: 80px 0;
      left: 50%;
      transform: translateX(-50%);
      -webkit-transform: translateX(-50%);
+     border-width: 5px;
+   }
+
+   #workspace .main-description ul li {
+     font-size: .9em;
    }
 
 
-	#workspace .computer{
+	#workspace .computer {
     bottom: 8px;
-    width: 80%;
+    width: 100%;
     position: relative;
 	  overflow: hidden;
 	  /*overflow-y: visible;*/
     left: 50%;
-     margin-left: -35%;
+    margin-left: -45%;
 
 	  transform: none;
 	  -webkit-transform: none;
 	}
+
+  #workspace .on-screen {
+    display: block;
+    width: 60%;
+    height: 50%;
+    position: absolute;
+    top: 11%;
+    left: 50%;
+    padding: 2px 12px;
+    margin-left: -40%;
+    text-align: left;
+    /* color: #fff; */
+    border-top: 5px solid #3f3f3f;
+    font-size: 1.5rem;
+    background: #e5e5e5;
+    border-radius: 4px;
+}
 
 	#workspace .computer-icon {
 	  /*position: relative;*/

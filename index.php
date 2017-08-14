@@ -71,9 +71,9 @@
             <img src="img/computer.svg" alt="компьютер" class="computer-icon">
             <img src="img/computer-glass.svg" alt="блик компьютерного стекла" class="computer-glass">
 
-            <div class="advertising visible-xs">
+            <div class="on-screen visible-xs">
               <p>
-                зарегистрируйтесь <b>до 1 сентября</b> и получите <b>2 урока в подарок</b>
+                Зарегистрируйтесь <b>до 1 сентября</b> и получите <b>2 урока в подарок</b>
               </p>
             </div>  <!-- advertising -->
 
@@ -209,7 +209,7 @@
 					<ul class="list-group">
 					  <li class="list-group-item">При оплате за 24 занятия - 160 грн. за занятие</li>
 					  <li class="list-group-item">При оплате за 8 занятий - 180 грн. за занятие</li>
-					  <li class="list-group-item">При оплате за 2 занятия - 190 грн. за занятие</li>
+					  <li class="list-group-item">При оплате за 2 занятия - 200 грн. за занятие</li>
 					</ul>
 				</div>
 			</div> <!-- /col -->
