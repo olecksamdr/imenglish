@@ -13,7 +13,15 @@
 
   <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
   <link rel="stylesheet" href="css/reviews.css">
-  <title>reviews</title>
+  <title>отзывы | I. M.</title>
+
+  <meta name="description" content="Отзывы людей, которые изучали английский вместе с нами." />
+  <!-- for facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://imenglish.com.ua">
+  <meta property="og:title" content="Английский по skype | I.M.">
+  <meta property="og:description" content="Отзывы людей, которые изучали английский вместе с нами.">
+  <meta property="og:image" content="http://imenglish.com.ua/img/im.png">
 </head>
 <body>
   <!-- Modal -->
