@@ -93,6 +93,26 @@ header.container-fluid {
   padding-right: 0;
 }
 
+.contacts {
+  padding: 5px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 999999;
+  top: 0;
+  left: 0;
+  background: #000;
+  color: #fff;
+}
+
+.contacts span {
+  margin-left: 10px;
+}
+
+.contacts span img {
+  height: 18px;
+  width: auto;
+}
+
 /*
  *	NAVIGATION
  *
@@ -110,6 +130,7 @@ header.container-fluid {
 }
 
 .navbar {
+  top: 30px;
   background-color: rgba(247, 247, 247, 0.7);
   border-radius: 0;
 }

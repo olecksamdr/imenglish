@@ -7,7 +7,7 @@
       <!-- <h4 class="modal-title" id="myModalLabel">Modal title</h4> -->
 
       <img
-        src="../img/phone-call.svg"
+        src="../img/phone-call.png"
         alt="phone"
         id="modal-banner"
       >

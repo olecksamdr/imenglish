@@ -39,7 +39,7 @@
     <div class="container">
      <div class="text-center">
       <div class="section-title">
-        <img src="img/good-review.svg" alt="pass test icon">
+        <img src="img/good-review.png" alt="палец вверх">
         <h2 class="reviews">
           отзывы
         </h2>

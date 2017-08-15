@@ -100,7 +100,7 @@
 	  <div class="container">
 		 <div class="text-center">
 			<div class="section-title">
-				<img src="img/test.svg" alt="лист бумаги и карандаш">
+				<img src="img/test.png" alt="лист бумаги и карандаш">
 				<h2 >
 					Готовим к международным экзаменам и ЗНО
 				</h2>
@@ -182,7 +182,7 @@
 	<div class="container">
 		 <div class="text-center">
 			<div class="section-title">
-				<img src="img/price.svg" alt="иконка цена">
+				<img src="img/price.png" alt="иконка цена">
 				<h2 >
 					Цены за 60 минут
 				</h2>
@@ -192,7 +192,7 @@
 		<div class="row" id="price-wrapper">
 			<div class="col-md-6">
 				<div class="price-info">
-					 <img src="img/alphabet.svg" alt="иконка алфавит">
+					 <img src="img/alphabet.png" alt="иконка алфавит">
 					 <h3 class="text-center">Общий курс (A1-B1)</h3>
 
 					  <ul class="list-group">
@@ -204,7 +204,7 @@
 			</div> <!-- /col -->
 			<div class="col-md-6">
 				<div class="price-info">
-					<img src="img/diploma.svg" alt="иконка диплом">
+					<img src="img/diploma.png" alt="иконка диплом">
 					<h3 class="text-center">Общий курс B2-C2, подготовка к международным экзаменам</h3>
 					<ul class="list-group">
 					  <li class="list-group-item">При оплате за 24 занятия - 160 грн. за занятие</li>
