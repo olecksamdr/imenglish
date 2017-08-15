@@ -1,6 +1,8 @@
 
 $(function() {
 
+  /************************************/
+
   // on extra small devices change container display to flex
   // for older browser support we use flexibility.js
   if ($(window).width() <= 767) {
@@ -37,25 +39,36 @@ $(function() {
 	changeNavIfNeeded();
 	$(window).scroll(changeNavIfNeeded);
 
-	/***************** workspace-title aligment *******************/
-	var
-	  workspaceTitle = $('#workspace-title'),
-	  navbar = $('nav.navbar'),
-	  computer = $('.computer');
+	/***************** workspace-title aligment and set flex-container height *******************/
+  function setFlexContainerHeight() {
+    var flexContainer = $('#flex-container');
+
+    flexContainer.css('height', ($('#workspace').height() - 20) + 'px');
+  }
 
 	function positionWorkspaceTitle() {
+    var
+      workspaceTitle = $('#workspace-title h1'),
+      navbar = $('nav.navbar'),
+      computer = $('.computer');
+
 		if (workspaceTitle.is(':visible')) {
 		 	// find distance between navbar and comuter
 			var distance = computer.offset().top - (navbar.offset().top + navbar.height());
-			var position =  parseInt( distance / 2 + workspaceTitle.height() / 2);
+			var position =  parseInt( distance / 2 - workspaceTitle.height()/2);
 
-			workspaceTitle.css('top', position + 'px');
+      console.log(position);
+      console.log(distance);
+
+			workspaceTitle.css('margin-bottom', position + 'px');
 		}
 	}
 
 	positionWorkspaceTitle();
+  // setFlexContainerHeight();
 
 	$(window).on('resize', positionWorkspaceTitle);
+	// $(window).on('resize', setFlexContainerHeight);
 
 	/***************** Waypoints ******************/
 

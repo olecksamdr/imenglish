@@ -5,9 +5,16 @@
     session_start();
 }
 ?>
+<!-- <div class="contacts">
+  <div class="container">
+    <span>Skype: imenglish@gmail.com</span>
+    <span>Телефон: 0678473060</span>
+  </div>
+</div> -->
 
 <nav class="navbar navbar-fixed-top">
 <div class="container">
+
   <div class="navbar-header">
     <button
       type="button"

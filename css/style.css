@@ -130,7 +130,7 @@ header.container-fluid {
 }
 
 .navbar {
-  top: 30px;
+  /*top: 30px;*/
   background-color: rgba(247, 247, 247, 0.7);
   border-radius: 0;
 }
@@ -375,7 +375,7 @@ header.container-fluid {
   position: relative;
   max-width: 1600px;
   min-width: 100%;
-  min-height: 750px;
+  min-height: 705px;
   height: 100%;
 
   /* table */
@@ -383,9 +383,11 @@ header.container-fluid {
   background: #eadc74;
 }
 
-header .container {
+header #flex-container {
   position: relative;
-  min-height: 100%;
+  height: 100%;
+  /*min-height: 100%;*/
+  /*min-height: 100vh;*/
 }
 
 
@@ -730,15 +732,18 @@ header .container {
 /* Extra small devices  */
 
 #workspace-title {
-  position: absolute;
   text-align: center;
-  top: -70px;
+  margin-bottom: 10px;
+  align-self: center;
+  /*flex-grow: 1*/
+  /*top: -70px;*/
 }
 
 #workspace-title h1{
+    display: inline-block;
+    vertical-align: middle;
     margin-top: 5px;
     margin-bottom: 0;
-    display: inline-block;
     padding: 5px 20px;
     color: #ffffff;
     text-transform: uppercase;
@@ -761,18 +766,23 @@ header .container {
 	    font-size: 14px;
 	 }
 
-  header .container {
+  #flex-container {
     -js-display: flex;
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    /*position: absolute;*/
+    /*top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);*/
   }
 
    /* workspace */
    #workspace {
-     height: auto;
+     height: 100%;
+     min-height: 100px;
    }
-
-
    #workspace .main-description {
      position: relative;
      width: 100%;
@@ -789,17 +799,20 @@ header .container {
    }
 
 
-	#workspace .computer {
-    bottom: 8px;
+	#flex-container .computer {
+    /*bottom: 8px;*/
     width: 100%;
     position: relative;
+    left: auto;
+    top: auto;
 	  overflow: hidden;
+    margin: 0 auto;
 	  /*overflow-y: visible;*/
-    left: 50%;
-    margin-left: -45%;
+    /*left: 50%;*/
+    /*margin-left: -45%;*/
 
-	  transform: none;
 	  -webkit-transform: none;
+    transform: none;
 	}
 
   #workspace .on-screen {
@@ -852,8 +865,8 @@ header .container {
 	#workspace .skype-wrapper {
       width: 110px;
       height: 110px;
-      top: 18%;
-      left: 50%;
+      top: 35%;
+      left: 42%;
       transform: translateX(-50%) translateY(-50%);
       -webkit-transform: translateX(-50%) translateY(-50%);
 	}

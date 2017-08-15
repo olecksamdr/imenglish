@@ -41,20 +41,14 @@
   require_once(TEMPLATES_PATH.'/navigation.php');
   ?>
 
-  <div class="container" >
-
-
-        <!-- <div id="workspace-title" class="visible-xs">
-          <h1>уроки английского по скайпу</h1>
-        </div> -->
-
+  <div class="container" id="flex-container">
         <div class="advertising hidden-xs">
           <p>
             Зарегистрируйтесь <b>до 1 сентября</b> и получите <b>2 урока в подарок</b>
           </p>
         </div>  <!-- advertising -->
 
-          <div class="main-description">
+          <div class="main-description hidden-xs">
             <h3>Почему мы?<br> Потому что у нас:</h3>
             <ul>
               <li>опытные преподаватели,</li>
@@ -67,17 +61,21 @@
             </ul>
           </div> <!-- /main-description -->
 
+          <div id="workspace-title" class="visible-xs">
+            <h1>уроки английского по скайпу</h1>
+          </div>
+
           <div class="computer">
             <img src="img/computer.svg" alt="компьютер" class="computer-icon">
             <img src="img/computer-glass.svg" alt="блик компьютерного стекла" class="computer-glass">
 
-            <div class="on-screen visible-xs">
+            <!-- <div class="on-screen visible-xs">
               <p>
                 Зарегистрируйтесь <b>до 1 сентября</b> и получите <b>2 урока в подарок</b>
               </p>
-            </div>  <!-- advertising -->
+            </div>   -->
 
-            <div class="skype-wrapper hidden-xs">
+            <div class="skype-wrapper">
               <img src="img/skype.svg" alt="иконка скайп" class="skype-icon">
 
               <div class="double-bounce1"></div>
