@@ -219,6 +219,7 @@ html, body {
 .navbar-nav>li,
 .navbar-nav>li>a,
 .navbar-toggle,
+.navbar .contacts,
 button#btn-logout,
 #orderLessonBtn {
   transition: all 300ms ease-in-out;
@@ -282,6 +283,13 @@ button#btn-logout:hover {
 }
 
 @media (max-width: 768px) {
+  .navbar .contacts,
+  .nav.navbar.scrolled .contacts {
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 15px;
+  }
+
 	.navbar-nav>li:first-child {
 	  margin-left: 0;
 	}
@@ -310,6 +318,20 @@ button#btn-logout:hover {
   }
 }
 
+.navbar .contacts {
+  margin: 0;
+  padding-top: 10px;
+  color: #f7f7f7;
+}
+
+.navbar .contacts b {
+  margin-left: 10px;
+}
+
+.navbar .contacts img {
+  height: 30px;
+  width: auto;
+}
 
 /*
  *	SECTION REVIEWS
